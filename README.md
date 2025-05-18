@@ -25,6 +25,8 @@ Determining what qualifies a plan as "funded" required interpreting the availabl
 
 
 
+
+
 **Q2: Transaction Frequency Analysis**
 
 Objective: To segment customers by how often they transact per month.
@@ -51,6 +53,8 @@ Ensuring monthly average was representative (not skewed by inactive months), so 
 
 
 
+
+
 **Q3: Account Inactivity Alert**
 
 Objective: To identify active savings or investment accounts with no inflow transactions in the last 365 days.
@@ -70,6 +74,8 @@ Finally, I calculated inactivity in days using MySQL’s DATEDIFF() and filtered
 My initial approach using union join on large tables caused connection timeouts.
 
 I fixed it by summarizing transaction data before joining to reduce complexity and improve performance.
+
+
 
 
 
@@ -93,7 +99,5 @@ Results were sorted by highest CLV to identify most valuable customers.
 **Challenge:**
 
 Dealing with data in kobo required converting to naira for realistic CLV.
-
-
 
 
