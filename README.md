@@ -69,9 +69,9 @@ Then, I joined the plan data with the last known savings transaction date using 
 
 Finally, I calculated inactivity in days using MySQL’s DATEDIFF() and filtered for accounts with more than 365 days of inactivity.
 
-**Challenges:**
+**Challenge:**
 
-My initial approach using union join on large tables caused connection timeouts.
+My initial approach using union join made my query run for so long it caused connection timeouts.
 
 I fixed it by summarizing transaction data before joining to reduce complexity and improve performance.
 
