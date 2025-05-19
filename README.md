@@ -67,7 +67,7 @@ Next, I pulled all plan details from plans_plan, identifying whether each plan i
 
 Then, I joined the plan data with the last known savings transaction date using LEFT JOIN on owner_id to capture users even if they had no transactions.
 
-Finally, I calculated inactivity in days using MySQL’s DATEDIFF() and filtered for accounts with more than 365 days of inactivity.
+Finally, I calculated inactivity in days using DATEDIFF() and filtered for accounts with more than 365 days of inactivity.
 
 **Challenge:**
 
